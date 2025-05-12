@@ -38,4 +38,50 @@ img {
   max-width: 900px;
   margin: 0 auto;
   padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.counter-div{
+  width: 40rem;
+  border: 1px solid var(--grey);
+  background-color: var(--light-blue);
+  padding: 1rem;
+  color: var(--white);
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.counter-div > *{
+  margin: 2rem;
+}
+
+.count{
+  font-size: 4rem;
+}
+
+.buttons button{    /*select any button element inside the buttons class element*/
+  padding: 1rem;
+  margin: 0 1rem;   
+  font-size: 1.5rem;
+  color: var(--white);
+  font-weight: 700;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+.subtract{
+  background-color: orangered;
+}
+
+button.reset{     /*reset button could overide button*/
+  color: var(--black);
+  background-color:var(--white);
+}
+
+.add{
+  background-color: green;
 }
